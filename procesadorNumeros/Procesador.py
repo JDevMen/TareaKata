@@ -3,7 +3,10 @@ class Procesador:
         respuesta = []
         if numeros == "":
             respuesta = [0, 0, 0, 0]
-            print(respuesta)
             return respuesta
         else:
-            pass
+            respuesta.append(1)
+            respuesta.append(0)
+            respuesta.append(0)
+            respuesta.append(0)
+            return respuesta
