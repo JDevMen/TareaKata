@@ -13,13 +13,16 @@ class Procesador:
             if len(lista) == 1:
                 respuesta.append(int(lista[0]))
             else:
-                elementoA = int(lista[0])
-                elementoB = int(lista[1])
+                i = 1
+                minimo = int(lista[0])
 
-                if elementoA < elementoB:
-                    respuesta.append(elementoA)
-                else:
-                    respuesta.append(elementoB)
+                while i < len(lista):
+                    elementoNum = int(lista[i])
+                    if elementoNum < minimo:
+                        minimo = elementoNum
+
+                    i += 1
+                respuesta.append(minimo)
             respuesta.append(0)
             respuesta.append(0)
             return respuesta
