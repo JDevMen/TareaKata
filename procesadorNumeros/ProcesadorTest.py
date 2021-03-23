@@ -66,10 +66,10 @@ class ProcesadorTest(TestCase):
         listaPrueba = ""
         self.assertEqual(Procesador().procesadorText(listaPrueba), [0, -1, -1, -1], "Arreglo vacio")
 
-    # def test_procesador_String_numero_encontrar_promedio_un_numero(self):
-    #     listaPrueba = "1"
-    #     self.assertEqual(Procesador().procesadorText(listaPrueba), [1, 1, 1, 0], "Arreglo vacio")
-    #
+    def test_procesador_String_numero_encontrar_promedio_un_numero(self):
+        listaPrueba = "1"
+        self.assertEqual(Procesador().procesadorText(listaPrueba), [1, 1, 1, 1], "Arreglo vacio")
+
     # def test_procesador_String_numero_encontrar_promedio_dos_numero(self):
     #     listaPrueba = "2,3"
     #     self.assertEqual(Procesador().procesadorText(listaPrueba), [2, 2, 3, 0], "Arreglo vacio")
