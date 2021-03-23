@@ -34,30 +34,47 @@ class ProcesadorTest(TestCase):
     #
     # def test_procesador_String_numero_encontrar_minimo_un_numero(self):
     #     listaPrueba = "1"
-    #     self.assertEqual(Procesador().procesadorText(listaPrueba), [1, 1, 0, 0], "Arreglo vacio")
+    #     self.assertEqual(Procesador().procesadorText(listaPrueba), [1, 1, 0, 0], "Arreglo 1 elemento")
     #
     # def test_procesador_String_numero_encontrar_minimo_dos_numero(self):
     #     listaPrueba = "2,3"
-    #     self.assertEqual(Procesador().procesadorText(listaPrueba), [2, 2, 0, 0], "Arreglo vacio")
+    #     self.assertEqual(Procesador().procesadorText(listaPrueba), [2, 2, 0, 0], "Arreglo 2 elementos")
     #
     # def test_procesador_String_numero_encontrar_minimo_n_Numeros(self):
     #     stringAProcesar = "5, 7, 9 , 10, 2, 1"
     #
     #     self.assertEqual(Procesador().procesadorText(stringAProcesar), [6, 1, 0, 0], "Arreglo con n números")
 
-    def test_procesador_String_numero_encontrar_maximo_vacio(self):
+    # def test_procesador_String_numero_encontrar_maximo_vacio(self):
+    #     listaPrueba = ""
+    #     self.assertEqual(Procesador().procesadorText(listaPrueba), [0, -1, -1, 0], "Arreglo vacio")
+    #
+    # def test_procesador_String_numero_encontrar_maximo_un_numero(self):
+    #     listaPrueba = "1"
+    #     self.assertEqual(Procesador().procesadorText(listaPrueba), [1, 1, 1, 0], "Arreglo 1 elemento")
+    #
+    # def test_procesador_String_numero_encontrar_maximo_dos_numero(self):
+    #     listaPrueba = "2,3"
+    #     self.assertEqual(Procesador().procesadorText(listaPrueba), [2, 2, 3, 0], "Arreglo 2 elementos")
+    #
+    # def test_procesador_String_numero_encontrar_maximo_n_Numeros(self):
+    #     stringAProcesar = "5, 7, 9 , 10, 2, 1"
+    #
+    #     self.assertEqual(Procesador().procesadorText(stringAProcesar), [6, 1, 10, 0], "Arreglo con n números")
+
+    def test_procesador_String_numero_encontrar_promedio_vacio(self):
         listaPrueba = ""
-        self.assertEqual(Procesador().procesadorText(listaPrueba), [0, -1, -1, 0], "Arreglo vacio")
+        self.assertEqual(Procesador().procesadorText(listaPrueba), [0, -1, -1, -1], "Arreglo vacio")
 
-    def test_procesador_String_numero_encontrar_maximo_un_numero(self):
-        listaPrueba = "1"
-        self.assertEqual(Procesador().procesadorText(listaPrueba), [1, 1, 1, 0], "Arreglo vacio")
-
-    def test_procesador_String_numero_encontrar_maximo_dos_numero(self):
-        listaPrueba = "2,3"
-        self.assertEqual(Procesador().procesadorText(listaPrueba), [2, 2, 3, 0], "Arreglo vacio")
-
-    def test_procesador_String_numero_encontrar_maximo_n_Numeros(self):
-        stringAProcesar = "5, 7, 9 , 10, 2, 1"
-
-        self.assertEqual(Procesador().procesadorText(stringAProcesar), [6, 1, 10, 0], "Arreglo con n números")
+    # def test_procesador_String_numero_encontrar_promedio_un_numero(self):
+    #     listaPrueba = "1"
+    #     self.assertEqual(Procesador().procesadorText(listaPrueba), [1, 1, 1, 0], "Arreglo vacio")
+    #
+    # def test_procesador_String_numero_encontrar_promedio_dos_numero(self):
+    #     listaPrueba = "2,3"
+    #     self.assertEqual(Procesador().procesadorText(listaPrueba), [2, 2, 3, 0], "Arreglo vacio")
+    #
+    # def test_procesador_String_numero_encontrar_promedio_n_Numeros(self):
+    #     stringAProcesar = "5, 7, 9 , 10, 2, 1"
+    #
+    #     self.assertEqual(Procesador().procesadorText(stringAProcesar), [6, 1, 10, 0], "Arreglo con n números")
