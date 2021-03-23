@@ -2,7 +2,7 @@ class Procesador:
     def procesadorText(self, numeros):
         respuesta = []
         if numeros == "":
-            respuesta = [0, -1, -1, 0]
+            respuesta = [0, -1, -1, -1]
             return respuesta
         else:
             numeros = numeros.replace(" ", "")
