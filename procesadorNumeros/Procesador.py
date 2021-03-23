@@ -9,7 +9,7 @@ class Procesador:
             lista = numeros.split(",")
 
             respuesta.append(len(lista))
-            respuesta.append(0)
+            respuesta.append(1)
             respuesta.append(0)
             respuesta.append(0)
             return respuesta
