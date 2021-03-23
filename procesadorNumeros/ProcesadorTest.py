@@ -31,3 +31,7 @@ class ProcesadorTest(TestCase):
     def test_procesador_String_numero_encontrar_minimo_vacio(self):
         listaPrueba = ""
         self.assertEqual(Procesador().procesadorText(listaPrueba), [0, -1, 0, 0], "Arreglo vacio")
+
+    def test_procesador_String_numero_encontrar_minimo_un_numero(self):
+        listaPrueba = "1"
+        self.assertEqual(Procesador().procesadorText(listaPrueba), [1, 1, 0, 0], "Arreglo vacio")
