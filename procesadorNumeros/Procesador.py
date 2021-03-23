@@ -18,18 +18,18 @@ class Procesador:
                 i = 1
                 minimo = int(lista[0])
                 maximo = int(lista[0])
+                promedio = int(lista[0])
                 while i < len(lista):
                     elementoNum = int(lista[i])
                     if elementoNum < minimo:
                         minimo = elementoNum
                     if elementoNum > maximo:
                         maximo = elementoNum
+                    promedio += elementoNum
+
                     i += 1
                 respuesta.append(minimo)
                 respuesta.append(maximo)
-
-                elementoA = int(lista[0])
-                elementoB = int(lista[1])
-                respuesta.append((elementoA+elementoB)/2)
-
+                respuesta.append(promedio/len(lista))
+            print(respuesta)
             return respuesta
