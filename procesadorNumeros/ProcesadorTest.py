@@ -51,7 +51,7 @@ class ProcesadorTest(TestCase):
 
     def test_procesador_String_numero_encontrar_maximo_un_numero(self):
         listaPrueba = "1"
-        self.assertEqual(Procesador().procesadorText(listaPrueba), [1, 1, -1, 0], "Arreglo vacio")
+        self.assertEqual(Procesador().procesadorText(listaPrueba), [1, 1, 1, 0], "Arreglo vacio")
 
     # def test_procesador_String_numero_encontrar_maximo_dos_numero(self):
     #     listaPrueba = "2,3"

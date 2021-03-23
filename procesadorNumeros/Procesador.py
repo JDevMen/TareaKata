@@ -12,6 +12,7 @@ class Procesador:
 
             if len(lista) == 1:
                 respuesta.append(int(lista[0]))
+                respuesta.append(int(lista[0]))
             else:
                 i = 1
                 minimo = int(lista[0])
@@ -23,6 +24,6 @@ class Procesador:
 
                     i += 1
                 respuesta.append(minimo)
-            respuesta.append(0)
+                respuesta.append(0)
             respuesta.append(0)
             return respuesta
