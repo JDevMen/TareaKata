@@ -1,3 +1,3 @@
 class Procesador:
-    def procesadorText(self, numeros):
+    def procesadorText(numeros):
         pass
