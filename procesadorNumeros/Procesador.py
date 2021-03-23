@@ -6,10 +6,8 @@ class Procesador:
             return respuesta
         else:
             lista = numeros.split(",")
-            if len(lista) == 1:
-                respuesta.append(1)
-            else:
-                respuesta.append(2)
+            
+            respuesta.append(len(lista))
             respuesta.append(0)
             respuesta.append(0)
             respuesta.append(0)
