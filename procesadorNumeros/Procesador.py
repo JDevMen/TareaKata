@@ -28,5 +28,5 @@ class Procesador:
                 respuesta.append(minimo)
                 respuesta.append(maximo)
                 respuesta.append(0)
-                
+
             return respuesta
