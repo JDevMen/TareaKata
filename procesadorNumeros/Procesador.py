@@ -5,8 +5,9 @@ class Procesador:
             respuesta = [0, 0, 0, 0]
             return respuesta
         else:
+            numeros = numeros.replace(" ", "")
             lista = numeros.split(",")
-            
+
             respuesta.append(len(lista))
             respuesta.append(0)
             respuesta.append(0)
