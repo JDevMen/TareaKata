@@ -72,7 +72,7 @@ class ProcesadorTest(TestCase):
 
     def test_procesador_String_numero_encontrar_promedio_dos_numero(self):
         listaPrueba = "2,3"
-        self.assertEqual(Procesador().procesadorText(listaPrueba), [2, 2, 3, 3], "Arreglo 2 elementos")
+        self.assertEqual(Procesador().procesadorText(listaPrueba), [2, 2, 3, 2.5], "Arreglo 2 elementos")
 
     # def test_procesador_String_numero_encontrar_promedio_n_Numeros(self):
     #     stringAProcesar = "5, 7, 9 , 10, 2, 1"

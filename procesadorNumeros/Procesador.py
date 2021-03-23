@@ -27,6 +27,9 @@ class Procesador:
                     i += 1
                 respuesta.append(minimo)
                 respuesta.append(maximo)
-                respuesta.append(0)
+
+                elementoA = int(lista[0])
+                elementoB = int(lista[1])
+                respuesta.append((elementoA+elementoB)/2)
 
             return respuesta
