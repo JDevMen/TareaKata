@@ -5,3 +5,5 @@ class Procesador:
             respuesta = [0, 0, 0, 0]
             print(respuesta)
             return respuesta
+        else:
+            pass
