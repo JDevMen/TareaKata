@@ -74,7 +74,7 @@ class ProcesadorTest(TestCase):
         listaPrueba = "2,3"
         self.assertEqual(Procesador().procesadorText(listaPrueba), [2, 2, 3, 2.5], "Arreglo 2 elementos")
 
-    # def test_procesador_String_numero_encontrar_promedio_n_Numeros(self):
-    #     stringAProcesar = "5, 7, 9 , 10, 2, 1"
-    #
-    #     self.assertEqual(Procesador().procesadorText(stringAProcesar), [6, 1, 10, 0], "Arreglo con n números")
+    def test_procesador_String_numero_encontrar_promedio_n_Numeros(self):
+        stringAProcesar = "5, 7, 9 , 10, 2, 1"
+        promedio = (5+7+9+10+2+1)/6
+        self.assertEqual(Procesador().procesadorText(stringAProcesar), [6, 1, 10, promedio], "Arreglo con n números")
