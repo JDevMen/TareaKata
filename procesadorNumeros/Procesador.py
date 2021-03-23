@@ -24,6 +24,13 @@ class Procesador:
 
                     i += 1
                 respuesta.append(minimo)
-                respuesta.append(0)
+                elementoA = int(lista[0])
+                elementoB = int(lista[1])
+
+                if elementoA > elementoB:
+                    respuesta.append(elementoA)
+                else:
+                    respuesta.append(elementoB)
+
             respuesta.append(0)
             return respuesta
